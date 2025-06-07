@@ -1,12 +1,16 @@
 import { createServer } from "http";
 
-import Settings from "./config.js";
-import { processRequest } from "./routes.js";
+import settings from "./config.js";
+import handleRequest from "./routes.js";
+
+import { Route } from "./routing.js";
+
+Route.use(settings);
 
 const server = createServer((req, res) => {
-    if(req.url == ""){};
+    res.setHeader("Access-Control-Allow-Origin", `${settings.protocol}://${settings.hostname}:${settings.frontendPort}`);
+    
+    return handleRequest(req, res);
 });
 
-server.listen(Settings.PORT, Settings.HOSTNAME);
-
-fetch("localhost:8800/process/?tensionA=1&tensionB=2&resistance1=3&resistance2=4&resistance3=4&resistance4=5&resistance5=6");
+server.listen(settings.port, settings.hostname);

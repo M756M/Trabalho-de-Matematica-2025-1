@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "target": "esnext",
+        "rootDirs": ["./", "../module"],
+        "composite": true,
+        "verbatimModuleSyntax": true,
+        "strict": true,
+        "outDir": "../../../public/js/src/core",
+        "declarationDir": "../../../public/js/src/lib",
+        "tsBuildInfoFile": "../../../.private/frontend.tsbuildinfo",
+        "lib": ["DOM"]
+    },
+    "include": ["./*.ts"]
+}

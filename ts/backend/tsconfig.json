@@ -1,5 +1,4 @@
 {
-    "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/refs/heads/master/src/schemas/json/tsconfig.json",
     "compilerOptions": {
         "module": "nodenext",
         "moduleResolution": "nodenext",
@@ -7,10 +6,9 @@
         "composite": true,
         "verbatimModuleSyntax": true,
         "strict": true,
-        "outDir": "../../../public/js",
-        "declarationDir": "../../../public/lib",
+        "outDir": "../../../public/js/api/core",
+        "declarationDir": "../../../public/js/api/lib",
         "tsBuildInfoFile": "../../../.private/core.tsbuildinfo"
     },
-    "references": [{ "path": "../module" }],
     "include": ["./*.ts"]
 }

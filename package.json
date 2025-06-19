@@ -1,0 +1,11 @@
+{
+  "name": "sistemas_lineares_aplicado_a_eletronica",
+  "type": "module",
+  "author": {
+    "name": "Matheus Castro de Inchoste",
+    "email": "matheusinchoste.pf007@academico.ifsul.edu"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

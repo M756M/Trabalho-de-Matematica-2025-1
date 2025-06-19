@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "noEmit": true,
+        "composite": true,
+        "tsBuildInfoFile": "../.private/main.tsbuildinfo"
+    },
+    "references": [{ "path": "./ts/backend" }, { "path": "./ts/frontend" }]
+}
